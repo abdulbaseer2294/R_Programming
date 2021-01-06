@@ -1,7 +1,7 @@
 ---
 title: "Introduction to R Programming"
-author: "Sana Rasheed"
-date: "May 14, 2020"
+author: "ABDUL BASEER"
+date: "Jan 06, 2020"
 output: html_document
 ---
 
@@ -15,7 +15,7 @@ output: html_document
 
 ### Question 1 
 **Create the variables with the following composition:**  
-1. A vector containing each letter of your first name as its elements.  
+1. A vector containing each letter of your first name as its elements.
 2. A variable that contains your name concatenated from the vector created in (1)  
 3. A variable containing a sequence from 100 to 120.  
 4. Create a matrix of 3x3 dimensions that contains the even sequence of numbers starting from 2.  
