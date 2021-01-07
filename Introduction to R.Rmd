@@ -1,7 +1,7 @@
 ---
 title: "Introduction to R Programming"
-author: "Sana Rasheed"
-date: "May 14, 2020"
+author: "Abdul Baseer"
+date: "Jan 07, 2021"
 output: html_document
 ---
 
@@ -13,7 +13,7 @@ output: html_document
 
 ## Section 1: Data Types and Operations Pt. 1
 
-### Question 1 
+### Questi+on 1 
 **Create the variables with the following composition:**  
 1. A vector containing each letter of your first name as its elements.  
 2. A variable that contains your name concatenated from the vector created in (1)  
@@ -24,30 +24,29 @@ output: html_document
 
 ```{r }
 #### Start solution ####
-```
+#Q1
 
+#(1)
 
-```{r }
+x<- c("a", "b", "d", "u", "l")      #abdul first part of my name
+#(2)
+x    # all my name alphabets in variable x 
+y<- c("b", "a", "s", "e", "e", "r")  #baseer second part of my name
+y
+z<- c(x,y)    #concatenating x and y
+z
 
-```
+#(3)
+s<- 100:120   #s contains sequence from 100 to 120
 
+#(4)
 
-```{r }
+x<- matrix(c(2,4,6,8,10,12,14,16,18), nrow=3, ncol=3)
+x
+#(5)
+dimnames(x)<- list(c("r1", "r2", "r3"), c("c1", "c2", "c3"))
+x
 
-```
-
-
-```{r }
-
-```
-
-
-```{r }
-
-```
-
-
-```{r }
 #### End solution ####
 ```
 
@@ -60,25 +59,20 @@ output: html_document
 
 ```{r }
 #### Start solution ####
-```
 
 
-```{r }
+#(1)
 
-```
-
-
-```{r }
-
-```
-
-
-```{r }
-
-```
+eemp_status<- factor(c("employed", "unemployed", "self_employed"))
+#(2)
+eemp_status
+levels(emp_status)
+nlevels(emp_status)
+class(emp_status)
+#(3)
+unclass(emp_status)
 
 
-```{r }
 #### End solution ####
 ```
 
@@ -97,30 +91,27 @@ output: html_document
 
 ```{r }
 #### Start solution ####
-```
+
+bank_costumers<- data.frame()
 
 
-```{r }
-
-```
 
 
-```{r }
+# Create the data frame.
+bank_costumers <- data.frame(costomer_id = c (1:5), 
+ # costumer_name = c("Alicia","Nancy","Fernando","Louis","Diane"),
+  hasAccount= c("NO", "YES", "YES", "YES", "NO"),
+  totalBalance = c(0,10000,0,2000,0), 
+  
+  
+  stringsAsFactors = FALSE
+)
+# Print the data frame.			
+print(bank_costumers) 
+nrow(bank_costumers)
+ncol(bank_costumers)
+names(bank_costumers)
 
-```
-
-
-```{r }
-
-```
-
-
-```{r }
-
-```
-
-
-```{r }
 #### End solution ####
 ```
 
